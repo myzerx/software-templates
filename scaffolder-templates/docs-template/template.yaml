@@ -1,13 +1,11 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  name: docs-template
-  title: Documentation Template
+  name: Gitlab Template
+  title: Gitlab Documentation Template
   description: Create a new standalone documentation project
   tags:
-    - recommended
-    - techdocs
-    - mkdocs
+    - gitlab
 spec:
   owner: backstage/techdocs-core
   type: documentation
@@ -47,6 +45,7 @@ spec:
           ui:options:
             allowedHosts:
               - github.com
+              - gitlab.com
 
   # This template is meant to be used on top of an existing template.
   # By adding the following and fetching from an absolute URL you can
